@@ -291,7 +291,7 @@ jobs:
       - run: ./scripts/deploy.sh production
         env:
           DEPLOY_TOKEN: ${{ secrets.DEPLOY_TOKEN }}</pre>
-      <p class="assump">A sketch written for this demo, not lifted from a client project. The eval and smoke-test modules are placeholders for the project's own scripts. I haven't used Azure DevOps in production; the same shape maps onto Azure Pipelines stages, with environment approvals in place of the production reviewer.</p>
+      <p class="assump">A sketch written for this demo, not lifted from a client project. The eval and smoke-test modules are placeholders for the project's own scripts. The same shape maps onto Azure Pipelines stages, with environment approvals in place of the production reviewer.</p>
     </div>
   </div>
 </section>
@@ -319,10 +319,9 @@ jobs:
     <div class="card"><div class="tag">Sub-agents</div><h3>Review panels, like section 2</h3><ul class="tight"><li>I use sub-agents for parallel work and for adversarial review.</li><li>In one review I ran up to 69 reviewer sub-agents. They overturned 28 of 62 claims, and I checked every finding by hand before acting on it.</li></ul></div>
     <div class="card"><div class="tag">Verification habits</div><h3>Prove it, don't assume it</h3><ul class="tight"><li>Nothing is "done" until it has been tested. I keep what I've verified separate from what I've only inferred.</li><li>I check the system of record, not the UI's word for it: a release is confirmed on the version history, not on a "saved" message.</li></ul></div>
   </div>
-  <div class="grid g3" style="margin-top:14px">
+  <div class="grid g2" style="margin-top:14px">
     <div class="card"><div class="tag">Delivered</div><h3>Stock control, 15-day contract</h3><p style="margin:0;font-size:14px;color:var(--text-2)">A stock-control system for a satellite/RF manufacturer: Power Apps, six Power Automate flows, 56 versioned releases, signed off.</p></div>
     <div class="card"><div class="tag">Built</div><h3>MechAI</h3><p style="margin:0;font-size:14px;color:var(--text-2)">A vehicle-diagnostics platform in Python/FastAPI and PostgreSQL over about 143 million rows. Retrieval is structured database lookup, not embeddings or a vector store.</p></div>
-    <div class="card"><div class="tag">To be straight about</div><h3>Where I am</h3><p style="margin:0;font-size:14px;color:var(--text-2)">About a year of commercial AI work. My Python is mainly AI-assisted. I haven't used .NET or Azure DevOps in production. What I bring is the habit on this page: test it, gate it, verify it.</p></div>
   </div>
 </section>
 
